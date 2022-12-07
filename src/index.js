@@ -1,17 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function MyInfo() {
+  return (
+    <div>
+      <h1 className='Title'>Nahomi Garcia</h1>
+      <p>Oi sou a Na, tenho 27 anos,</p>
+      <p>Sou Venezuelana, morando em São Paulo.</p>
+      <p>Bilingue, iniciante no mundo da programação como Developer Front-End.</p>
+      <ul>Gosto de:
+        <li>Ler Livros</li>
+        <li>Asistir Filmes e Series</li>
+        <li>Ser Confeitera</li>
+      </ul>
+    </div>
+  );
+}
+ReactDOM.render(<MyInfo />, document.getElementById("root"));
